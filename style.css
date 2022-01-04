@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   /* background-color: aqua;  */
+    
+}
+
+.container .card{
+    height: auto;
+    width: 240px;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+    padding: 10px;
+    /* box-shadow: 0 10px 20px rgba(27, 52, 66, 0.3); */
+    
+}
+.container .card:hover{
+    box-shadow: 0 10px 20px rgba(42, 235, 235, 0.3);
+
+}
+.container .card .image img{
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(33, 100, 139, 0.3);
+}
+.container .card .details{
+    margin: 8px;
+}
+.container .card .details h4{
+    color:hsl(0, 0%, 100%);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.container .card .details .about{
+    /* font-size: 18px; */
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.container .card .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.container .card .price .nft__price{
+    color: cyan;
+    margin-right: 26px;
+}
+.container .card .price .time__left{
+    color:hsl(215, 51%, 70%);
+    margin-left: 5px;
+}
+.container .card hr{
+    width: 100%;
+    background-color:hsl(215, 51%, 70%);
+    border: none;
+    height: 1px;
+}
+.container .card .creator__info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color:hsl(215, 51%, 70%);
+
+}
+
+.container .card .creator__info img{
+    height: auto;
+    width: 15%;
+    border: 2px solid hsl(215, 51%, 70%);
+    border-radius: 50%;
+    margin-right: 10px;
+    
+    
+}
+.container .card .creator__info span{
+    color: white;
+}
